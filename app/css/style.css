@@ -3,17 +3,17 @@
 
 a {
   text-decoration: none;
-  color: inherit;
-  display: block; }
+  color: inherit; }
 
 img {
   object-fit: scale-down;
   max-width: 100%;
   display: block; }
 
-.header {
-  background-color: black; }
+.catalog {
+  padding-left: 110px; }
 
-h1 {
-  color: red;
-  text-align: center; }
+.catalog__navigation {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 12px 2px; }

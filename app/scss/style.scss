@@ -1,12 +1,13 @@
 @import "global";
 @import "fonts";
-.header {
-    background-color: black;
+.catalog {
+    padding-left: 110px;
 }
 
-h1 {
-    color: red;
-    text-align: center;
+.catalog__navigation {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 2px;
 }
 
 @import "media";
