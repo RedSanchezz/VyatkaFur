@@ -1,43 +1,52 @@
 .catalog__products--list--item {
+  vertical-align: top;
   padding: 27px 34px 10px 34px;
   width: 407px;
   height: auto;
   position: relative;
-  margin-bottom: 35px; }
-  .catalog__products--list--item .top-left-border {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-left: 1px solid #D7B399;
-    border-top: 1px solid #D7B399; }
-  .catalog__products--list--item .top-right-border {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-right: 1px solid #D7B399;
-    border-top: 1px solid #D7B399; }
-  .catalog__products--list--item .bottom-right-border {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-right: 1px solid #D7B399;
-    border-bottom: 1px solid #D7B399; }
-  .catalog__products--list--item .bottom-left-border {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid #D7B399;
-    border-bottom: 1px solid #D7B399; }
-  .catalog__products--list--item:hover .hover--block {
-    display: block; }
+  margin-bottom: 35px;
+  transition: height 1s; }
+  .catalog__products--list--item:hover {
+    height: auto; }
+    .catalog__products--list--item:hover .hover--block {
+      display: block;
+      height: 160px; }
+
+.top-left-border {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 1px solid #D7B399;
+  border-top: 1px solid #D7B399; }
+
+.top-right-border {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #D7B399;
+  border-top: 1px solid #D7B399; }
+
+.bottom-right-border {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid #D7B399;
+  border-bottom: 1px solid #D7B399; }
+
+.bottom-left-border {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #D7B399;
+  border-bottom: 1px solid #D7B399; }
 
 .product--item__image {
   display: flex;
@@ -50,7 +59,8 @@
   line-height: 22.97px;
   font-weight: 700;
   text-decoration: line-through;
-  color: black; }
+  color: black;
+  display: flex; }
 
 .product--item__cost {
   margin-top: 6px;
@@ -59,13 +69,32 @@
   font-weight: 700;
   color: #C12752; }
 
+.product--item__discounts {
+  position: relative; }
+  .product--item__discounts img {
+    margin-left: 6px;
+    cursor: pointer; }
+  .product--item__discounts .product--item__discounts-benefit {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    height: 65px;
+    background-color: #C12752; }
+    .product--item__discounts .product--item__discounts-benefit.active {
+      display: none; }
+
 .product--item__description {
   margin-top: 4px;
   font-size: 18px;
   line-height: 17.23px; }
 
 .hover--block {
-  display: none; }
+  display: block;
+  height: 0;
+  transition: height 1s;
+  overflow: hidden; }
 
 .product--item__size--title {
   margin-top: 15px;

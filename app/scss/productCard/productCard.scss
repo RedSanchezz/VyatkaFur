@@ -1,0 +1,100 @@
+.product-card__slider {
+    width: 1271px;
+}
+.product-card__slider-block {
+    width: 1271px;
+}
+.product-card__slider-item  {
+    display: flex!important;
+    justify-content: space-between;
+    outline: none;
+}
+
+.slider-item__inner{
+    position: relative;
+    max-width: 617px;
+    width: 100%;
+    height: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 508px;
+        height: 756px;
+    }
+}
+
+.product-card__slider-arrows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.slider-arrows__right {
+    transform: rotate(180deg);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.slider-arrows__left {
+    cursor: pointer;
+    margin-right: 15px;
+}
+.slick-disabled {
+    svg {
+        stroke: #D7B399;
+    }
+}
+
+.product-card__slider-dots {
+    display: flex;
+    .slick-dots {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        .slick-active {
+            button {
+                background-color: #EB5757;
+            }
+        }
+        li {
+            display: block;
+            width: 40px;
+            height: 7px;
+            position: relative;
+            button {
+                width: 40px;
+                height: 7px;
+                border-radius: 0;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: #D7B399;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 0;
+            }
+        }
+    }
+}
+
+.product-card__slider-mobile {
+    width: 414px;
+    .slider-item__inner {
+        width: 383px;
+        height: 516px;
+        img {
+            width: 316px;
+        }
+    }
+    .slider-item__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

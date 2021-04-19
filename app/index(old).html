@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs/libs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Catalog</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="catalog">
+            <div class="catalog__navigation">
+                <a href="#" class="catalog__navigation--item">Главная</a> >
+                <a href="#" class="catalog__navigation--item">Каталог</a> >
+                <a href="#" class="catalog__navigation--item">Женские шубы</a>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog__filter">
+                    <form action="">
+                        <div class="catalog__filter-block">
+                            <div class="catalog__filter-block--title catalog__filter-title">Материал</div>
+                            <div class="catalog__filter-block-inputs">
+                                <div class="catalog__filter-block-mink">
+                                    <input id='inp_mink' type="checkbox">
+                                    <label for="inp_mink">Норка</label>
+                                </div>
+
+                                <div class="catalog__filter-block-mink">
+                                    <input id='inp_nutria' type="checkbox">
+                                    <label for="inp_nutria">Нутрия</label>
+                                </div>
+
+                                <div class="catalog__filter-block-mink">
+                                    <input id='inp_arcticFox' type="checkbox">
+                                    <label for="inp_arcticFox">Песец</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="catalog__filter-colors">
+                            <div class="catalog__filter-colors-title catalog__filter-title">Цвет</div>
+                            <div class="catalog__filter-colors-list">
+                                <label for="inp_color1" class="catalog__filter-colors-item color1"></label>
+                                <input type="checkbox" name="" id="inp_color1">
+
+                                <label for="inp_color2" class="catalog__filter-colors-item color2"></label>
+                                <input type="checkbox" name="" id="inp_color2">
+
+                                <label for="inp_color3" class="catalog__filter-colors-item color3"></label>
+                                <input type="checkbox" name="" id="inp_color3">
+
+                                <label for="inp_color4" class="catalog__filter-colors-item color4"></label>
+                                <input type="checkbox" name="" id="inp_color4">
+
+
+                                <label for="inp_color5" class="catalog__filter-colors-item color5"></label>
+                                <input type="checkbox" name="" id="inp_color5">
+
+
+                                <label for="inp_color6" class="catalog__filter-colors-item color6"></label>
+                                <input type="checkbox" name="" id="inp_color6">
+
+
+                                <label for="inp_color7" class="catalog__filter-colors-item color7"></label>
+                                <input type="checkbox" name="" id="inp_color7">
+
+                                <label for="inp_color8" class="catalog__filter-colors-item color8"></label>
+                                <input type="checkbox" name="" id="inp_color8">
+
+                                <label for="inp_color9" class="catalog__filter-colors-item color9"></label>
+                                <input type="checkbox" name="" id="inp_color9">
+                            </div>
+                        </div>
+                        <div class="catalog__filter-sizes">
+                            <div class="catalog__filter-sizes catalog__filter-title">Размер</div>
+                            <div class="catalog__filter-sizes-list">
+                                <div class="catalog__filter-sizes-item">
+
+                                    <input id='inp_filter-size-42' type="checkbox">
+                                    <label for="inp_filter-size-42">42</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-44' type="checkbox">
+                                    <label for="inp_filter-size-44">44</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-46' type="checkbox">
+                                    <label for="inp_filter-size-46">46</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-48' type="checkbox">
+                                    <label for="inp_filter-size-48">48</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-50' type="checkbox">
+                                    <label for="inp_filter-size-50">50</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-52' type="checkbox">
+                                    <label for="inp_filter-size-52">52</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-54' type="checkbox">
+                                    <label for="inp_filter-size-54">54</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-56' type="checkbox">
+                                    <label for="inp_filter-size-56">56</label>
+                                </div>
+                                <div class="catalog__filter-sizes-item">
+                                    <input id='inp_filter-size-58' type="checkbox">
+                                    <label for="inp_filter-size-58">58</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__filter-cost">
+                            <div class="catalog__filter-const-title catalog__filter-title">Цена</div>
+                            <div class="catalog__filter-cost-inputs">
+                                <div class="catalog__filter-cost-start">
+                                    <div>От</div>
+                                    <label for="inp_const_start" title="test"></label>
+                                    <input placeholder="999 ₽" type="text" name="" id="inp_const_start">
+                                </div>
+                                <div class="catalog__filter-cost-end">
+                                    <div>До</div>
+                                    <input placeholder="99 999 ₽" type="text" name="" id="inp_const_end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filter-buttons">
+                            <button type='submit' class="catalog__filter-button btn-apply" >Применить</button>
+                            <div class="catalog__filter-button btn-reset">Сбросить</div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="catalog-section-banner">
+                    <!-- <img src="img/bunner-img.png" alt=""> -->
+                </div>
+
+                <div class="catalog__products">
+
+                    <div class="catalog__products--header">
+                        <div class="catalog__products--title">Женские шубы</div>
+                        <div class="catalog__products--count">122 товара</div>
+                    </div>
+
+
+                    <div class="catalog__products--buttons">
+                        <div class="catalog__products-buttons-item active">когда за -30 градусов</div>
+                        <div class="catalog__products-buttons-item">дождливый апрель</div>
+                        <div class="catalog__products-buttons-item">лучшая цена</div>
+                        <div class="catalog__products-buttons-item">распродажа</div>
+                        <div class="catalog__products-buttons-item">хит продаж</div>
+                        <div class="catalog__products-sort-btn sort-btn">
+                            <div class="sort-btn__title">
+                                <div class="sort-btn__text">Сортировка</div>
+                                <img src="img/sort-arrow.svg" alt="" class="sort-btn__arrow">
+                            </div>
+                            <div class="sort-btn__active-block">
+                                <a class='sort-btn__active-block-item' href="#">популярности</a>
+                                <a class='sort-btn__active-block-item' href="#">алфавиту</a>
+                                <a class='sort-btn__active-block-item' href="#">увеличению цены</a>
+                                <a class='sort-btn__active-block-item' href="#">уменьшению цены</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__products--list">
+                        <div class="catalog__products--list--item product--item">
+                            <div class="product--item__image">
+                                <img src="img/product-item-photo.png" alt="">
+                            </div>
+                            <div class="product--item__old--cost">43 800 ₽ 
+                                <div class="product--item__discounts">
+                                    <img src="img/discount.svg" alt="">
+                                    <div class="product--item__discounts-benefit">check</div>
+                                </div>
+                            </div>
+                            <div class="product--item__cost">33 000 ₽</div>
+                            <div class="product--item__description">Укороченная куртка женская с натуральным мехом</div>
+
+                            <div class="product--item__hover--block hover--block">
+                                <div class="product--item__sizes">
+                                    <div class="product--item__size--title">Размеры:</div>
+                                    <div class="product--item__size--list">
+                                        <a href='#' class="product--item__size-bnt">48</a>
+                                        <a href='#' class="product--item__size-bnt">50</a>
+                                        <a href='#' class="product--item__size-bnt">52</a>
+                                        <a href='#' class="product--item__size-bnt">54</a>
+                                        <a href='#' class="product--item__size-bnt">56</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="hover--block__btn">Подробнее</a>
+
+                            </div>
+
+
+                            <div class="top-left-border"></div>
+                            <div class="top-right-border"></div>
+                            <div class="bottom-left-border"></div>
+                            <div class="bottom-right-border"></div>
+                        </div>
+
+                        <div class="catalog__products--list--item product--item">
+                            <div class="product--item__image">
+                                <img src="img/product-item-photo.png" alt="">
+                            </div>
+                            <div class="product--item__old--cost">43 800 ₽ 
+                                <div class="product--item__discounts">
+                                    <img src="img/discount.svg" alt="">
+                                    <div class="product--item__discounts-benefit">check</div>
+                                </div>
+                            </div>
+                            <div class="product--item__cost">33 000 ₽</div>
+                            <div class="product--item__description">Укороченная куртка женская с натуральным мехом</div>
+
+                            <div class="product--item__hover--block hover--block">
+                                <div class="product--item__sizes">
+                                    <div class="product--item__size--title">Размеры:</div>
+                                    <div class="product--item__size--list">
+                                        <a href='#' class="product--item__size-bnt">48</a>
+                                        <a href='#' class="product--item__size-bnt">50</a>
+                                        <a href='#' class="product--item__size-bnt">52</a>
+                                        <a href='#' class="product--item__size-bnt">54</a>
+                                        <a href='#' class="product--item__size-bnt">56</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="hover--block__btn">Подробнее</a>
+
+                            </div>
+
+
+                            <div class="top-left-border"></div>
+                            <div class="top-right-border"></div>
+                            <div class="bottom-left-border"></div>
+                            <div class="bottom-right-border"></div>
+                        </div>
+                        
+
+                        <div class="catalog__products--list--item product--item">
+                            <div class="product--item__image">
+                                <img src="img/product-item-photo.png" alt="">
+                            </div>
+                            <div class="product--item__old--cost">43 800 ₽ 
+                                <div class="product--item__discounts">
+                                    <img src="img/discount.svg" alt="">
+                                    <div class="product--item__discounts-benefit">check</div>
+                                </div>
+                            </div>
+                            <div class="product--item__cost">33 000 ₽</div>
+                            <div class="product--item__description">Укороченная куртка женская с натуральным мехом</div>
+
+                            <div class="product--item__hover--block hover--block">
+                                <div class="product--item__sizes">
+                                    <div class="product--item__size--title">Размеры:</div>
+                                    <div class="product--item__size--list">
+                                        <a href='#' class="product--item__size-bnt">48</a>
+                                        <a href='#' class="product--item__size-bnt">50</a>
+                                        <a href='#' class="product--item__size-bnt">52</a>
+                                        <a href='#' class="product--item__size-bnt">54</a>
+                                        <a href='#' class="product--item__size-bnt">56</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="hover--block__btn">Подробнее</a>
+
+                            </div>
+
+
+                            <div class="top-left-border"></div>
+                            <div class="top-right-border"></div>
+                            <div class="bottom-left-border"></div>
+                            <div class="bottom-right-border"></div>
+                        </div>
+
+                        <div class="catalog__products--list--item product--item">
+                            <div class="product--item__image">
+                                <img src="img/product-item-photo.png" alt="">
+                            </div>
+                            <div class="product--item__old--cost">43 800 ₽ 
+                                <div class="product--item__discounts">
+                                    <img src="img/discount.svg" alt="">
+                                    <div class="product--item__discounts-benefit">check</div>
+                                </div>
+                            </div>
+                            <div class="product--item__cost">33 000 ₽</div>
+                            <div class="product--item__description">Укороченная куртка женская с натуральным мехом</div>
+
+                            <div class="product--item__hover--block hover--block">
+                                <div class="product--item__sizes">
+                                    <div class="product--item__size--title">Размеры:</div>
+                                    <div class="product--item__size--list">
+                                        <a href='#' class="product--item__size-bnt">48</a>
+                                        <a href='#' class="product--item__size-bnt">50</a>
+                                        <a href='#' class="product--item__size-bnt">52</a>
+                                        <a href='#' class="product--item__size-bnt">54</a>
+                                        <a href='#' class="product--item__size-bnt">56</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="hover--block__btn">Подробнее</a>
+
+                            </div>
+
+
+                            <div class="top-left-border"></div>
+                            <div class="top-right-border"></div>
+                            <div class="bottom-left-border"></div>
+                            <div class="bottom-right-border"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/lib.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
