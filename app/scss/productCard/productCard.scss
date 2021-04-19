@@ -1,5 +1,14 @@
+.product-card__bottom-block {
+    padding: 0 112px;
+}
+
 .product-card__top-block {
     display: flex;
+    padding: 0 112px;
+}
+
+.product-card__info {
+    padding-left: 24px;
 }
 
 .product-card__info-title {
@@ -30,6 +39,31 @@
 .product-card__old-cost {
     margin-top: 32px;
     display: flex;
+    position: relative;
+    img {
+        cursor: pointer;
+    }
+}
+
+.product-card__discount-img {
+    position: relative;
+}
+
+.product-card__discount-benefit {
+    position: absolute;
+    // top: -10px;
+    top: -65px;
+    right: -265px;
+    width: 287px;
+    height: 65px;
+    background: #C12752;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card__old-cost-text {
@@ -203,11 +237,95 @@
 
 .product-card__facts-item {
     display: flex;
+    align-items: center;
     margin-top: 25px;
 }
 
 .product-card__facts-item-icon {
     margin-right: 10px;
+}
+
+.product-card__facts-item-text {
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.04em;
+    color: #212121;
+}
+
+.product-card__bottom-block {
+    display: flex;
+}
+
+.descriptions-item {
+    max-width: 821px;
+    width: 100%;
+    height: auto;
+    .descriptions-item__popup {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        padding-bottom: 0;
+        transition-timing-function: linear;
+    }
+    &.active {
+        .descriptions-item__popup {
+            height: auto;
+            max-height: 300px;
+        }
+        .descriptions-item__icon {
+            transform: rotate(-90deg);
+        }
+    }
+    transition: 1s height;
+}
+
+.descriptions-item__title {
+    font-family: Gotham Pro;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.descriptions-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s transform;
+}
+
+.top-border {
+    border-top: 1px solid #D7B399;
+}
+
+.product-card__social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 282px;
+    margin-top: 21px;
+}
+
+.product-card__social-text {
+    font-family: Gotham Pro;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #AEAEAE;
+}
+
+.product-card__social-icons {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.product-card__social-icons-item {
+    margin-right: 16px;
 }
 
 @import 'productCardMedia.scss';

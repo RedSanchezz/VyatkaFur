@@ -25,7 +25,6 @@ $('.product-card__rating-active').css({
 {
     let rating = $('.product-card__rating-unactive');
     let array = Array.from($('a', rating));
-    console.log(array);
     array.map((value, index, array) => {
         value.addEventListener('mousemove', (e) => {
             for(let i =index; i>=0; i--){
@@ -39,6 +38,38 @@ $('.product-card__rating-active').css({
         });
 
     })
+}
 
 
+
+// bottom block
+let height;
+let titles=$('.descriptions-item__title');
+
+for (const it of titles) {
+    let title = $(it);
+    let item = title.parent();
+
+    let popup = $('.descriptions-item__popup', item);
+    let height = getComputedStyle(popup.get(0)).height;
+
+    $(it).on('click', (e) => {
+        item.toggleClass('active');
+    });
+}
+
+
+//benefit
+{
+    let discount = $('.product-card__discount-img');
+    let benefit = $('<div class="product-card__discount-benefit">Выгода: 10 800 ₽</div>');
+
+    discount.on('mouseenter', (e) => {
+        console.log('enter');
+        discount.append(benefit);
+    });
+    discount.on('mouseleave', (e) => {
+        console.log('leave');
+        benefit.remove();
+    });
 }
