@@ -64,6 +64,26 @@ function validateCostInput(){
     })
 }
 
+$('.product--item').on('mouseenter ', (e) => {
+    $(e.currentTarget).css({
+        zIndex: 999
+    })
+});
+$('.product--item').on('mouseleave ', (e) => {
+    $(e.currentTarget).css({
+        zIndex: 998
+    })
+});
+$('.product--item').on('mouseleave', (e) => {
+    $(e.currentTarget).on('transitionend', transitionEnd);
+    function transitionEnd(e){
+        $(e.currentTarget).css({
+            zIndex: 0
+        })
+        $(e.currentTarget).off({'transitionend': transitionEnd});
+    }
+});
+
 
 sortBtn();
 colorInputs();

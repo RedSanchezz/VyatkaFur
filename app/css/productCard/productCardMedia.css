@@ -1,0 +1,11 @@
+@media (max-width: 516px) {
+  .product-card__slider-block {
+    display: none; }
+  .product-card__slider-mobile {
+    display: block; }
+  .product-card__slider-mobile-block {
+    display: flex; }
+  .product-card__slider-arrows {
+    display: flex; }
+  .product-card__slider-mobile-block .slider-arrows {
+    display: block; } }

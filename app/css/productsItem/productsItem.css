@@ -5,9 +5,11 @@
   height: auto;
   position: relative;
   margin-bottom: 35px;
-  transition: height 1s; }
+  transition: height 1s;
+  background-color: white; }
   .catalog__products--list--item:hover {
-    height: auto; }
+    height: auto;
+    z-index: 999; }
     .catalog__products--list--item:hover .hover--block {
       display: block;
       height: 160px; }

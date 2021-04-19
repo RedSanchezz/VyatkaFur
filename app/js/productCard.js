@@ -16,3 +16,29 @@ $('.product-card__slider-mobile').slick({
     dots: false,
 });
 
+//rating 
+let rating = $('.product-card__rating').attr('data-rating');
+$('.product-card__rating-active').css({
+    width: rating + '%',
+})
+
+{
+    let rating = $('.product-card__rating-unactive');
+    let array = Array.from($('a', rating));
+    console.log(array);
+    array.map((value, index, array) => {
+        value.addEventListener('mousemove', (e) => {
+            for(let i =index; i>=0; i--){
+                array[i].classList.add('active');
+            }
+        });
+        value.addEventListener('mouseleave', (e) => {
+            for (const it of array) {
+                it.classList.remove('active');
+            }
+        });
+
+    })
+
+
+}

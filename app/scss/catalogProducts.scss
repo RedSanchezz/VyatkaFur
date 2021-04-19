@@ -3,7 +3,6 @@
     max-width: 1283px;
     grid-column-start: 2;
     padding-top: 14px;
-
 }
 
 .catalog__products--header {
@@ -33,7 +32,6 @@
     padding: 10px 0 0 0;
     padding-right: 206px;
     position: relative;
-
 }
 
 .catalog__products-buttons-item {
@@ -67,7 +65,6 @@
     justify-content: flex-start;
     cursor: pointer;
     position: absolute;
-
     width: 203px;
     right: 0;
     top: 15px;
@@ -75,7 +72,6 @@
     transition: all 1s;
     z-index: 999;
     background-color: #FFFFFF;
-
     .sort-btn__title {
         display: flex;
         padding: 10px 0;
@@ -129,6 +125,7 @@
     margin-top: 28px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 408px);
+    grid-template-rows: minmax(683px, 683px);
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
