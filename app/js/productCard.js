@@ -36,7 +36,6 @@ $('.product-card__rating-active').css({
                 it.classList.remove('active');
             }
         });
-
     })
 }
 

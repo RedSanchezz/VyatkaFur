@@ -64,25 +64,16 @@ function validateCostInput(){
     })
 }
 
-$('.product--item').on('mouseenter ', (e) => {
-    $(e.currentTarget).css({
-        zIndex: 999
+
+let globalZIndex = 99999;
+
+let array = Array.from($('.product--item'))
+
+for (const it of array) {
+    $(it).css({
+        zIndex: globalZIndex--,
     })
-});
-$('.product--item').on('mouseleave ', (e) => {
-    $(e.currentTarget).css({
-        zIndex: 998
-    })
-});
-$('.product--item').on('mouseleave', (e) => {
-    $(e.currentTarget).on('transitionend', transitionEnd);
-    function transitionEnd(e){
-        $(e.currentTarget).css({
-            zIndex: 0
-        })
-        $(e.currentTarget).off({'transitionend': transitionEnd});
-    }
-});
+}
 
 
 

@@ -1,11 +1,14 @@
+
+.catalog__products--list--item-wrapper {
+    height: 683px;
+}
 .catalog__products--list--item {
     vertical-align: top;
     padding: 27px 34px 10px 34px;
     width: 407px;
-    height: auto;
     position: relative;
     margin-bottom: 35px;
-    transition: height 1s;
+    transition: height 0.5s;
     background-color: white;
     &:hover {
         height: auto;
@@ -110,8 +113,10 @@
 .hover--block {
     display: block;
     height: 0;
-    transition: height 1s;
+    transition: height 0.5s;
     overflow: hidden;
+    background-color: white;
+    position: relative;
 }
 
 .product--item__size--title {
