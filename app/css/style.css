@@ -238,6 +238,8 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  .catalog-section-banner img {
+    max-width: 100%; }
 
 .catalog__products {
   width: 100%;
