@@ -60,7 +60,7 @@ for (const it of titles) {
 
 //benefit
 {
-    let discount = $('.product-card__discount-img');
+    let discount = $('.product-card__discount-img img');
     //убираем все не цифры и превращаем в целочислненное
     let oldCost = parseInt($('.product-card__old-cost-text').text().replace(/\D/gi, ''));
     let newCost = parseInt($('.product-card__new-cost').text().replace(/\D/gi, ''));
@@ -73,6 +73,7 @@ for (const it of titles) {
         // do functionality on screens smaller than 768px
         discount.on('mouseenter', (e) => {
             benefit.addClass('active');
+
         });
     }
     discount.on('mouseleave', (e) => {

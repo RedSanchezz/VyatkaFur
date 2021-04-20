@@ -68,7 +68,6 @@ function validateCostInput(){
 let globalZIndex = 99999;
 
 let array = Array.from($('.product--item'))
-
 for (const it of array) {
     $(it).css({
         zIndex: globalZIndex--,

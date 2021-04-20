@@ -8,7 +8,8 @@
 
 .product-card__top-block {
   display: flex;
-  padding: 0 112px; }
+  padding: 0 112px;
+  overflow: hidden; }
 
 .product-card__info {
   padding-left: 24px; }
