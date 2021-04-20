@@ -195,6 +195,11 @@
     line-height: 12px;
     letter-spacing: 0.04em;
     color: #D7B399;
+    white-space: nowrap;
+}
+
+.product-card__reviews-text {
+    white-space: nowrap;
 }
 
 .product-card__add-review {

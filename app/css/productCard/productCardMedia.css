@@ -121,6 +121,8 @@
     white-space: nowrap; } }
 
 @media (max-width: 410px) {
+  .product-card__add-review-text {
+    white-space: normal; }
   .product-card__social {
     padding-left: 0; }
   .product-card__top-block {

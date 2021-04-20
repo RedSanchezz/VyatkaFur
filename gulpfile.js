@@ -2,6 +2,12 @@ var gulp = require('gulp');
 let browserSync = require('browser-sync');
 let scss = require('gulp-sass');
 let concat = require('gulp-concat');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnext = require('cssnext');
+var precss = require('precss');
+
+
 
 gulp.task("watch", function() {
     gulp.watch('./app/*.html', gulp.parallel('html'));
@@ -20,6 +26,14 @@ gulp.task('scss', function() {
         .pipe(browserSync.reload({ stream: true }));
 });
 
+gulp.task('postcss', () => {
+    var plugins = [
+        autoprefixer({overrideBrowserslist: ['last 6 version']}),
+    ];
+    return gulp.src('app/css/*.css')
+        .pipe(postcss(plugins))
+        .pipe(gulp.dest('app/css/'));
+})
 
 gulp.task("css", function() {
     return gulp.src("./node_modules/normalize.css/normalize.css").pipe();
