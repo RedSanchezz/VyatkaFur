@@ -66,20 +66,25 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin-left: 7px;
+    margin-right: 10px;
     cursor: pointer;
     position: relative;
-    &.active::before {
+    &::before {
         box-sizing: border-box;
         content: ' ';
         position: absolute;
         top: 0;
         left: 0;
-        border: 3px solid black;
+        border: 1px solid black;
         width: 33px;
         height: 33px;
         border-radius: 50%;
         transform: translate(-4px, -4px);
+        transition: 0.4s opacity;
+        opacity: 0;
+    }
+    &.active::before {
+        opacity: 1;
     }
 }
 
