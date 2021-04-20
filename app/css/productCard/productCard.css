@@ -590,6 +590,9 @@
     .descriptions-item__title h2 {
       color: #D7B399;
       transition: all 0.5s; }
+  .descriptions-item__popup {
+    padding-left: 30px;
+    padding-right: 20px; }
   .active .descriptions-item__title {
     border: 0 solid #D7B399;
     background: white; }
@@ -670,4 +673,9 @@
   .product-card__size-item {
     margin-right: 1px; }
   .product-card__add-review {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .descriptions-item__title {
+    padding-left: 10px; }
+  .descriptions-item__popup {
+    padding-left: 10px;
+    padding-right: 10px; } }
