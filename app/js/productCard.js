@@ -67,15 +67,15 @@ for (const it of titles) {
 
     let difference = oldCost - newCost;
 
-    let benefit = $('<div class="product-card__discount-benefit">Выгода: '+ difference + ' ₽</div>');
-
+    let benefit = $('.product-card__discount-benefit');
+    benefit.text('Выгода: '+ difference + ' ₽')
     if(window.matchMedia('(min-width: 560px)').matches){
         // do functionality on screens smaller than 768px
         discount.on('mouseenter', (e) => {
-            discount.append(benefit);
+            benefit.addClass('active');
         });
     }
     discount.on('mouseleave', (e) => {
-        benefit.remove();
+        benefit.removeClass('active');
     });
 }

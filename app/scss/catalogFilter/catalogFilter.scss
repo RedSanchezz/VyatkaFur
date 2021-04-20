@@ -47,10 +47,11 @@
         display: block;
         content: ' ';
         position: absolute;
-        width: 25px;
-        height: 25px;
-        top: 0;
-        left: 0;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-image: url('../img/checkbox.png');
         background-position: center;
         background-size: cover;
@@ -202,6 +203,7 @@
         width: 100%;
         margin-top: 4px;
         padding: 0 10px;
+        height: 25px;
     }
 }
 
@@ -211,6 +213,7 @@
         width: 100%;
         margin-top: 4px;
         padding: 0 10px;
+        height: 25px;
     }
 }
 

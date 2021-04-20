@@ -271,7 +271,11 @@
   line-height: 23px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s; }
+  .product-card__discount-benefit.active {
+    opacity: 1; }
 
 .product-card__old-cost-text {
   font-weight: bold;
@@ -364,6 +368,8 @@
   text-decoration-line: underline;
   color: #D7B399;
   display: block; }
+  .product-card__text.installments {
+    margin-top: 7px; }
 
 .credit {
   margin-top: 18px; }
@@ -491,6 +497,8 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #000000; }
+  .descriptions-item__about .descriptions-item__color {
+    margin-top: 10px; }
 
 .descriptions-item__icon {
   display: flex;

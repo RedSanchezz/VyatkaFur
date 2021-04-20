@@ -70,6 +70,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    &.active {
+        opacity: 1;
+    }
 }
 
 .product-card__old-cost-text {
@@ -173,6 +178,9 @@
     text-decoration-line: underline;
     color: #D7B399;
     display: block;
+    &.installments {
+        margin-top: 7px;
+    }
 }
 
 .credit {
@@ -325,6 +333,10 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #000000;
+    }
+    .descriptions-item__vendor-code {}
+    .descriptions-item__color {
+        margin-top: 10px;
     }
 }
 
