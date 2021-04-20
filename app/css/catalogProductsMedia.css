@@ -5,6 +5,8 @@
     width: 100%;
     max-height: 30px !important;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
     font-size: 14px;
     color: #C12752;
