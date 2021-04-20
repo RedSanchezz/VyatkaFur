@@ -38,6 +38,8 @@
     .product-card__buttons a {
       width: 100%;
       height: 56px; }
+  .product-card__descriptions {
+    padding-top: 15px; }
   .product-card__descriptions-item {
     margin-bottom: 18px; }
     .product-card__descriptions-item.top-border {
@@ -45,12 +47,16 @@
   .descriptions-item__title {
     border: 1px solid #D7B399;
     padding-left: 30px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    transition: all 0.5s; }
     .descriptions-item__title h2 {
-      color: #D7B399; }
+      color: #D7B399;
+      transition: all 0.5s; }
   .active .descriptions-item__title {
     border: 0 solid #D7B399;
     background: white; }
+    .active .descriptions-item__title h2 {
+      color: black; }
   .product-card__btn-buy-one-click {
     margin-top: 20px; }
   .product-card__text {

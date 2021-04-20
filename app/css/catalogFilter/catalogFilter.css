@@ -33,15 +33,39 @@
 .catalog__filter-cost {
   margin-top: 50px; }
 
+.fake-label {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #BDBDBD;
+  position: relative; }
+  .fake-label::before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: all 0.5s; }
+
 .catalog__filter-block-inputs .catalog__filter-block-mink {
   display: flex;
   align-items: center;
   margin-bottom: 10px; }
 
+.catalog__filter-block-inputs .fake-label {
+  margin-left: 0; }
+
 .catalog__filter-block-inputs input {
-  width: 25px;
-  height: 25px;
-  cursor: pointer; }
+  width: 0;
+  height: 0; }
+
+.catalog__filter-block-inputs input:checked + label.fake-label::before {
+  opacity: 1; }
 
 .catalog__filter-block-inputs label {
   margin-left: 13px;
@@ -52,13 +76,20 @@
   .catalog__filter-colors-list input {
     display: none; }
 
-.catalog__filter-colors-item {
+.colors-list__item {
   width: 25px;
   height: 25px;
+  margin-right: 10px; }
+  .colors-list__item .color1 {
+    background-color: #FFFFFF; }
+
+.catalog__filter-colors-item {
+  min-width: 25px;
+  height: 25px;
   border-radius: 50%;
-  margin-right: 10px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  display: block; }
   .catalog__filter-colors-item::before {
     box-sizing: border-box;
     content: ' ';
@@ -112,13 +143,16 @@
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 12px; }
+  .catalog__filter-sizes-item .fake-label {
+    margin-left: 0; }
+  .catalog__filter-sizes-item input {
+    width: 0;
+    height: 0; }
+  .catalog__filter-sizes-item input:checked + label.fake-label::before {
+    opacity: 1; }
   .catalog__filter-sizes-item label {
     margin-left: 5px;
     cursor: pointer; }
-  .catalog__filter-sizes-item input {
-    cursor: pointer;
-    width: 25px;
-    height: 25px; }
 
 .catalog__filter-cost-inputs {
   display: flex;

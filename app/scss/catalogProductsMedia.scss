@@ -1,0 +1,13 @@
+@media (max-width: 1500px) {
+    .catalog__products-buttons-item {
+        padding: 5px;
+        max-width: 200px;
+        width: 100%;
+        max-height: 30px!important;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 14px;
+        color: #C12752;
+        white-space: nowrap;
+    }
+}

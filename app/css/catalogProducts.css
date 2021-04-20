@@ -43,7 +43,8 @@
   transition: background-color 0.3s;
   font-size: 14px;
   color: #C12752;
-  text-align: center; }
+  text-align: center;
+  margin-left: 15px; }
   .catalog__products-buttons-item:hover {
     background-color: #C12752;
     color: #F9F6F1; }
@@ -253,3 +254,15 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around; }
+
+@media (max-width: 1500px) {
+  .catalog__products-buttons-item {
+    padding: 5px;
+    max-width: 200px;
+    width: 100%;
+    max-height: 30px !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    color: #C12752;
+    white-space: nowrap; } }

@@ -61,14 +61,21 @@ for (const it of titles) {
 //benefit
 {
     let discount = $('.product-card__discount-img');
-    let benefit = $('<div class="product-card__discount-benefit">Выгода: 10 800 ₽</div>');
+    //убираем все не цифры и превращаем в целочислненное
+    let oldCost = parseInt($('.product-card__old-cost-text').text().replace(/\D/gi, ''));
+    let newCost = parseInt($('.product-card__new-cost').text().replace(/\D/gi, ''));
 
-    discount.on('mouseenter', (e) => {
-        console.log('enter');
-        discount.append(benefit);
-    });
+    let difference = oldCost - newCost;
+
+    let benefit = $('<div class="product-card__discount-benefit">Выгода: '+ difference + ' ₽</div>');
+
+    if(window.matchMedia('(min-width: 560px)').matches){
+        // do functionality on screens smaller than 768px
+        discount.on('mouseenter', (e) => {
+            discount.append(benefit);
+        });
+    }
     discount.on('mouseleave', (e) => {
-        console.log('leave');
         benefit.remove();
     });
 }

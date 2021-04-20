@@ -49,6 +49,7 @@
     font-size: 14px;
     color: #C12752;
     text-align: center;
+    margin-left: 15px;
     &:hover {
         background-color: #C12752;
         color: #F9F6F1;
@@ -130,3 +131,5 @@
     align-items: flex-start;
     justify-content: space-around;
 }
+
+@import 'catalogProductsMedia.scss';
