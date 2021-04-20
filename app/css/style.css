@@ -234,7 +234,6 @@ img {
 
 .catalog-section-banner {
   height: 244px;
-  background-image: url("/img/bunner-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }

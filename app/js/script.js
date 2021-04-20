@@ -1,4 +1,4 @@
-
+//открыть блок с сортировкой
 function sortBtn(){
     let $button = $('.sort-btn__title')
     $button.click(() => {
@@ -6,6 +6,8 @@ function sortBtn(){
     })
 
 }
+
+//При активации чекбокса с цветом обводим его label
 function colorInputs(){
     let $colorList= $('.catalog__filter-colors-list');
     let labels =  Array.from($('label', $colorList));
@@ -18,9 +20,11 @@ function colorInputs(){
     })
 }
 
-
+//Валидация формы с ценой
 function validateCostInput(){
+    //цена От
     let $startCost = $('#inp_const_start');
+    //цена До
     let $endCost = $('#inp_const_end');
 
     $startCost.on('input', (e) => {
@@ -39,7 +43,6 @@ function validateCostInput(){
         //не может быть больше 99999
         value = parseInt(value) > 99999 ? '99999' : value;
         e.currentTarget.value=value;
-
     });
 
 
@@ -49,31 +52,32 @@ function validateCostInput(){
         value = value.replace(/\D/g, '');
         //строка не может начинаться с  последовательности 0
         value =value.replace(/^0+/, '');
- 
         e.currentTarget.value=value;
-     });
-     $endCost.on('change', (e) => {
+    });
+    $endCost.on('change', (e) => {
         let value = e.currentTarget.value;
         //не может быть меньше 999
         value = parseInt(value) < 999 ? '999' : value;
 
         //не может быть больше 99999
         value = parseInt(value) > 99999 ? '99999' : value;
-
         e.currentTarget.value=value;
     })
 }
 
 
-let globalZIndex = 99999;
 
-let array = Array.from($('.product--item'))
-for (const it of array) {
-    $(it).css({
-        zIndex: globalZIndex--,
-    })
+// нужно что бы у блока правильно появлялся нижний блок
+{
+    let globalZIndex = 99999;
+
+    let array = Array.from($('.product--item'))
+    for (const it of array) {
+        $(it).css({
+            zIndex: globalZIndex--,
+        })
+    }
 }
-
 
 
 

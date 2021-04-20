@@ -1,3 +1,4 @@
+//слайдеры
 $('.product-card__slider').slick({
     infinite: false,
     slidesToShow: 1,
@@ -17,11 +18,12 @@ $('.product-card__slider-mobile').slick({
 });
 
 //rating 
+//Заполняем рейтинг из атрибута
 let rating = $('.product-card__rating').attr('data-rating');
 $('.product-card__rating-active').css({
     width: rating + '%',
 })
-
+//меняем цвет звездочек при hover
 {
     let rating = $('.product-card__rating-unactive');
     let array = Array.from($('a', rating));
@@ -42,6 +44,7 @@ $('.product-card__rating-active').css({
 
 
 // bottom block
+//Меню в нижнем блоке
 let height;
 let titles=$('.descriptions-item__title');
 
@@ -58,7 +61,7 @@ for (const it of titles) {
 }
 
 
-//benefit
+//Динамически считаем выгоду и отображаем окно с ней
 {
     let discount = $('.product-card__discount-img img');
     //убираем все не цифры и превращаем в целочислненное
