@@ -132,4 +132,38 @@
     justify-content: space-around;
 }
 
+.catalog__products--button-mobile {
+    display: none;
+}
+
+.catalog__products--buttons-list {
+    display: flex;
+    width: 100%;
+}
+
+.sort-btn__mobile-btn {
+    display: none;
+}
+
+.catalog__products--filter-modal-btn {
+    display: none;
+}
+
+.mobile-close-modal {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.mobile-close-modal {
+    display: none;
+}
+
 @import 'catalogProductsMedia.scss';

@@ -82,6 +82,21 @@ function validateCostInput(){
 
 
 
+{
+    $('.catalog__products--button-mobile').on('click', (e) => {
+            $('.catalog__products--buttons-list').toggleClass('active');
+    })
+}
+
+
+{
+    $('.mobile-close-modal').on('click', (e) => {
+        $('.catalog__filter').toggleClass('mobile-open');
+    })
+    $('.catalog__products--filter-modal-btn').on('click', (e) => {
+        $('.catalog__filter').toggleClass('mobile-open');
+    })
+}
 sortBtn();
 colorInputs();
 validateCostInput();
